@@ -394,7 +394,7 @@ p {
 
 /* The Modal (background) */
 .modal {
-    display: none; 
+    visibility: hidden;
     position: fixed; 
     z-index: 1; 
     padding-top: 60px; 

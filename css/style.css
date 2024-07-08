@@ -76,7 +76,7 @@ p {
 	color: #003538;
 }
 .brand h1 {
-	font-size: 5rem;
+	font-size: 3rem;
 	text-transform: uppercase;
 	font-weight: 600;
 	color: white;
@@ -354,14 +354,22 @@ p {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 100px 0;
+	
 }
 
 
+.project_description{
+	margin: 0 auto 20px auto;
+	width: 80%;
+	text-align: center;
+}
+
 #projects .all-projects {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 10px;
     padding: 10px;
+	
 }
 
 #projects .project-img {
@@ -370,8 +378,9 @@ p {
 	overflow: hidden;
 	position: relative;
 	cursor: pointer;
+	border-radius: 5px;
 }
-#projects .project-img:after {
+#projects .project-img::aftr {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -380,12 +389,16 @@ p {
 	width: 100%;
 	background-image: linear-gradient(60deg, #003538 0%, #00292b 100%);
 	opacity: 0.5;
+	z-index: 1;
 }
+
 #projects .project-img img {
 	transition: 0.3s ease transform;
 }
-#projects .project-img:hover  img {
+
+#projects .project-img:hover img{
 	transform: scale(1.1);
+	z-index: 3;
 }
 /* End Projects section */
 
@@ -396,7 +409,7 @@ p {
 .modal {
     visibility: hidden;
     position: fixed; 
-    z-index: 1; 
+    z-index: 100; 
     padding-top: 60px; 
     left: 0;
     top: 0;
@@ -409,10 +422,17 @@ p {
 
 /* Modal Content (image) */
 .modal-content {
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
     margin: auto;
     display: block;
-    width: 80%;
-    max-width: 700px;
+    max-width: 90%;
+    max-height: 90%;
+    width: auto;
+    height: auto;
+    z-index: 101;
 }
 
 /* Add Animation */
@@ -427,14 +447,15 @@ p {
 }
 
 /* The Close Button */
-.close {
+.modal > span {
     position: absolute;
-    top: 15px;
+    top: 70px;
     right: 35px;
     color: #f1f1f1;
     font-size: 40px;
     font-weight: bold;
     transition: 0.3s;
+	padding: 10px;
 }
 
 .close:hover,

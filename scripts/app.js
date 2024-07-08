@@ -26,23 +26,27 @@ menu_item.forEach((item) => {
 });
 
 
-
 // Block code to handle the functionality of the modal
-document.addEventListener('DOMContentLoaded', () => {
 		// Get the modal
 	var modal = document.getElementById('myModal');
 
 	// Get the images and insert the clicked image inside the modal
 	var images = document.getElementsByClassName('gallery-image');
-	var modalImg = document.getElementById("img01");
+	var imagesContainer = document.querySelector('.project-img');
+	var modalImg = document.getElementById('img01');
 
-	for (let img of images) {
-		img.onclick = function() {
-			// console.log(img)
+	console.log(images)
+	
+		for (let i = 0; i < images.length; i++) {
+		images[i].onclick = function() {
+			console.log(images[i])
 			modal.style.visibility = "visible";
 			modalImg.src = this.src;
+			}
 		}
-	}
+		// console.log(images)
+
+
 
 	// Get the <span> element that closes the modal
 	var span = document.getElementsByClassName("close")[0];
@@ -59,4 +63,4 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	}
 
-})
+

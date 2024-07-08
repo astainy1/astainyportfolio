@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="fontawesome5/css/fontawesome.min.css">
+  <link rel="stylesheet" href="fontawesome6/css/fontawesome.css">
+  <title> Service | Astainy Portfolio</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="index.html">
+            <h1><span>A</span>sta<span>in</span>y</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="index.html" data-after="Home">Home</a></li>
+            <li><a href="services.html" data-after="Service">Services</a></li>
+            <li><a href="projects.html" data-after="Projects">Projects</a></li>
+            <li><a href="about.html" data-after="About">About</a></li>
+            <li><a href="contact.html" data-after="Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+<!-- Service Section -->
+<section id="services">
+    <div class="services container">
+      <div class="service-top">
+        <h1 class="section-title">Serv<span>i</span>ces</h1>
+        <p>I am specialize in designing and developing impactful websites as a Web Developer, and creating visually stunning graphics as a Graphic Designer. Let's collaborate to bring your digital vision to life!</p>
+      </div>
+      <div class="service-bottom">
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+          <h2>Web Development</h2>
+          <p>
+            I offer comprehensive web development services, specializing in creating responsive and user-friendly websites that meet your unique requirements. 
+            From simple static sites to dynamic web applications, 
+            I have the expertise to bring your ideas to life on the digital landscape.
+          </p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+          <h2>Graphics Design</h2>
+          <p>
+            I offer a range of creative services including logo design, brand identity development, print design, and digital design. With years of experience, 
+            I specialize in delivering impactful designs that resonate with audiences and elevate brand presence.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- End Service Section -->
+
+    <!-- Footer -->
+    <section id="footer">
+      <div class="footer container">
+        <div class="brand">
+          <h1><span>C</span>hristian <span> A.</span> Harris</h1>
+        </div>
+        <h2>Your Complete Graphic & Web Solution</h2>
+        <div class="social-icon">
+          <div class="social-item">
+            <a href="https://web.facebook.com/christian.harris.58555" target="_blank"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+          </div>
+          <div class="social-item">
+            <a href="https://www.instagram.com/astainyharris1/" target="_blank"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
+          </div>
+  
+          <div class="social-item">
+            <a href="https://github.com/astainy1" target="_blank"><img src="https://img.icons8.com/bubbles/100/000000/github.png" /></a>
+          </div>
+  
+          <div class="social-item">
+            <a href="https://www.pinterest.com/astainyh/" target="_blank"><img src="https://img.icons8.com/bubbles/100/000000/pinterest.png" /></a>
+          </div>
+        </div>
+        <p id="currentYear"> </p>
+      </div>
+    </section>
+    <!-- End Footer -->
+    <script src="scripts/app.js"></script>
+    <script>
+      function displayCurrentYear() {
+          const now = new Date();
+          const currentYear = now.getFullYear();
+          document.getElementById("currentYear").innerText = `Copyright © ${currentYear} Astainy. All rights reserved`;
+      }
+      
+      // Call the function to display the current year
+      displayCurrentYear();
+      </script>
+</body>
+
+</html>

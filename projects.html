@@ -24,7 +24,7 @@
     <div class="header container">
       <div class="nav-bar">
         <div class="brand">
-          <a href="#hero">
+          <a href="/">
             <h1><span>A</span>sta<span>in</span>y</h1>
           </a>
         </div>
@@ -61,27 +61,63 @@
           
           <div class="project-img">
             <img src="./img/img-5.jpg" alt="img" class="gallery-image">
+            <section id="img_overlay"></section>
           </div>
 
           
           <div class="project-img">
             <img src="./img/img-2.jpg" alt="img" class="gallery-image">
+            <section id="img_overlay"></section>
           </div>
 
           <div class="project-img">
             <img src="./img/img-3.jpg" alt="img" class="gallery-image">
+            <section id="img_overlay"></section>
           </div>
 
           <div class="project-img">
             <img src="./img/img-6.jpg" alt="img" class="gallery-image">
+            <section id="img_overlay"></section>
           </div>
           
           <div class="project-img">
             <img src="./img/img-1.jpg" alt="img" class="gallery-image">
+            <section id="img_overlay"></section>
           </div>
 
+          <div class="project-img">
+            <img src="./img/img-7.jpg" alt="img" class="gallery-image">
+            <section id="img_overlay"></section>
+          </div>
+
+          <div class="project-img">
+            <img src="./img/img-8.jpg" alt="img" class="gallery-image">
+            <section id="img_overlay"></section>
+          </div>
+
+          <div class="project-img">
+            <img src="./img/img-9.jpg" alt="img" class="gallery-image">
+            <section id="img_overlay"></section>
+          </div>
+
+          <div class="project-img">
+            <img src="./img/img-10.jpg" alt="img" class="gallery-image">
+            <section id="img_overlay"></section>
+          </div>
+
+          <div class="project-img">
+            <img src="./img/img-11.jpg" alt="img" class="gallery-image">
+            <section id="img_overlay"></section>
+          </div>
       </div>
+
+      <ul id="links_menu">
+        <li class="more_links"><a href="https://drive.google.com/drive/folders/1ah6sRK9jvoOEp7cuA3BsyJD_0qt31k4G?usp=sharing">More Graphic Projects</a></li>
+        <li class="more_links"><a href="#" id="web_dev_projects">More Web Dev Projects</a></li>
+      </ul>
     </div>
+
+
   </section>
   <!-- End Projects Section -->
 
@@ -120,6 +156,11 @@
   <!-- End Footer -->
   <script src="scripts/app.js"></script>
   <script>
+
+    messageUser = document.getElementById('web_dev_projects');
+    messageUser.addEventListener('click', () => {
+      alert('Still working on projects!')
+    })
     function displayCurrentYear() {
         const now = new Date();
         const currentYear = now.getFullYear();

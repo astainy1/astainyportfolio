@@ -51,6 +51,7 @@ p {
 	padding: 10px 7px;
 	color: #003538;
 	background-color: #99FF99;
+	border: 2px solid #99FF99;
 	/* border-left: 2px solid #99FF99;
 	border-right: 2px solid #99FF99; */
 	font-size: 2rem;
@@ -68,7 +69,7 @@ p {
 	box-shadow: 5px 10px 3px solid gray;
 	border: none;
 	/* text-decoration: underline; */
-	border: solid #fff;
+	border: 2px solid #fff;
 }
 
 #cta-cv:hover{
@@ -380,26 +381,72 @@ p {
 	cursor: pointer;
 	border-radius: 5px;
 }
-#projects .project-img::aftr {
-	content: '';
+
+#projects .project-img #img_overlay{
 	position: absolute;
-	left: 0;
-	top: 0;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
 	height: 100%;
 	width: 100%;
 	background-image: linear-gradient(60deg, #003538 0%, #00292b 100%);
 	opacity: 0.5;
 	z-index: 1;
+	transition: all .1s transform;
+
 }
 
+
 #projects .project-img img {
-	transition: 0.3s ease transform;
+	transition: .3s transform;
 }
 
 #projects .project-img:hover img{
 	transform: scale(1.1);
-	z-index: 3;
+	/* z-index: 3; */
 }
+
+#projects #img_overlay:hover{
+	top: -100%;
+	z-index: -1;
+	display: none;
+	opacity: 0;
+}
+#projects #img_overlay:focus{
+	top: -100%;
+	z-index: -1;
+	display: none;
+	opacity: 0;
+}
+
+#links_menu{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+	list-style-type: none;
+	gap: 20px;
+	margin-top: 20px ;
+}
+
+#links_menu li:first-child{
+	border-right: 1px solid #00292b ;
+	padding: 10px 20px;
+}
+
+#links_menu li:last-child{
+	padding: 10px;
+}
+
+#links_menu li a:active{
+	color: #0606d7;
+}
+
+#links_menu li a{
+	color: #001819;
+	font-weight: 700;
+}
+
 /* End Projects section */
 
 /* Modal Section Starts */

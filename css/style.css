@@ -776,6 +776,19 @@ p {
 
 /* End Keyframes */
 
+
+@media only screen and(max-width:350px) {
+	footer .footer-text p {
+		font-size: smaller;
+		margin-bottom: 1.5rem;
+	}
+
+	footer .brand {
+		font-size: smaller;
+
+	}
+}
+
 /* Media Query For Tablet */
 @media only screen and (min-width: 768px) {
 	.cta {
@@ -897,6 +910,19 @@ p {
 	}
 
 	/* End contact  */
+
+	/* Start footer */
+	footer .footer-text p {
+		font-size: smaller;
+		margin-bottom: 1.5rem;
+	}
+
+	footer .brand {
+		font-size: medium;
+
+	}
+
+	/* End footer */
 }
 
 /* End Media Query For Tablet */
